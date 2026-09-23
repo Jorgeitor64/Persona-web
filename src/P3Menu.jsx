@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const ITEMS = [
-  { id: "about",   label: "SOBRE M�",           page: "about",   fontSize: 80, offsetX: 0,  offsetY: 0,  skew: -6,  skewY: 10  },
-  { id: "resume",  label: "CURR�CULUM",         page: "resume",  fontSize: 66, offsetX: 20, offsetY: 8,  skew: -11, skewY: -10 },
+  { id: "about",   label: "SOBRE MÍ",           page: "about",   fontSize: 80, offsetX: 0,  offsetY: 0,  skew: -6,  skewY: 10  },
+  { id: "resume",  label: "CURRÍCULUM",         page: "resume",  fontSize: 66, offsetX: 20, offsetY: 8,  skew: -11, skewY: -10 },
   { id: "github",  label: "ENLACE GITHUB",      page: "github",  fontSize: 68, offsetX: 8, offsetY: 6,  skew: 0, skewY: -4  },
   { id: "socials", label: "REDES SOCIALES",     page: "socials", fontSize: 74, offsetX: 16, offsetY: 8,  skew: -3,  skewY: 5   },
   { id: "sideproj",label: "PROYECTOS",          page: "sideproj",fontSize: 56, offsetX: 10, offsetY: 6,  skew: -4,  skewY: 7   },
@@ -289,8 +289,8 @@ export default function P3Menu({ onNavigate }) {
         </nav>
 
         <div className={`p3-hint ${mounted ? "mounted" : ""}`}>
-          <div className="p3-hint-row"><span className="p3-hint-key">↑↓</span><span>NAVEGAR</span></div>
-          <div className="p3-hint-row"><span className="p3-hint-key">↵</span><span>CONFIRMAR</span></div>
+          <div className="p3-hint-row"><span className="p3-hint-key">ââ</span><span>NAVEGAR</span></div>
+          <div className="p3-hint-row"><span className="p3-hint-key">âµ</span><span>CONFIRMAR</span></div>
         </div>
       </div>
     </>
