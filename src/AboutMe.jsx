@@ -21,7 +21,7 @@ const REVEAL_CONTENT = [
   },
   {
     upper: [
-      "Estudiante de Ingenierùa informùtica",
+      "Estudiante de Ingenierùa ùinformtica",
     ],
     lower: "",
   },
@@ -39,7 +39,7 @@ const ROLES = [
 
 const ITEMS = [
   {
-    id: "twitch", label: "SOBR… MÕ", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "??", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
+    id: "twitch", label: "SOBRE MÕ", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "??", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
     links: ["twitch.tv/videos/2041837265"],
     stats: [
       { tag: "FOL", value: "1.2K", color: "#9147ff" },
