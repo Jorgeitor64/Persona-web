@@ -16,18 +16,17 @@ const MAIN_IMAGES = [mainm, mainm2, mainf];
 
 const REVEAL_CONTENT = [
   {
-    upper: ["SOBRE M√ç", ""],
-    lower: "Hola, soy Jorge Mart√≠n, tengo 17 a√±os y soy un programador novato",
+    upper: [],
+    lower: "Hola, soy Jorge Martùn, tengo 17 aùos y soy un programador novato",
   },
   {
     upper: [
-      "Estudiante de Ingenier√≠a inform√°tica",
-      "",
+      "Estudiante de Ingenierùa informùtica",
     ],
     lower: "",
   },
   {
-    upper: ["", ""],
+    upper: [],
     lower: "",
   },
 ];
@@ -40,7 +39,7 @@ const ROLES = [
 
 const ITEMS = [
   {
-    id: "twitch", label: "ABOUT ME", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "??", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
+    id: "twitch", label: "SOBR… MÕ", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "??", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
     links: ["twitch.tv/videos/2041837265"],
     stats: [
       { tag: "FOL", value: "1.2K", color: "#9147ff" },
@@ -299,8 +298,8 @@ export default function AboutMe() {
           top: 58%;
           right: 0;
           width: 48%;
-          min-height: 20%;
-          max-height: 34%;
+          min-height: auto;
+          max-height: 60vh;
           background: rgba(0, 0, 0, 0.92);
           clip-path: polygon(0 0, 100% 0, calc(100% - 22px) 100%, 0 100%);
           box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
@@ -310,13 +309,13 @@ export default function AboutMe() {
           color: #fff;
           font-family: 'Montserrat', sans-serif;
           font-weight: 300;
-          font-size: 22px;
-          line-height: 1.18;
+          font-size: 20px;
+          line-height: 1.25;
           letter-spacing: 0.4px;
           text-transform: lowercase;
           white-space: normal;
           overflow-y: auto;
-          padding: 10px 18px 10px 22px;
+          padding: 12px 18px 12px 22px;
         }
 
         @keyframes sc-right-nav-pop {
@@ -405,7 +404,7 @@ export default function AboutMe() {
         .sc-bar-outer:nth-child(2) { transition-delay: 80ms; }
         .sc-bar-outer:nth-child(3) { transition-delay: 160ms; }
 
-        /* red underlay ¬ó peeks out below the bar when active */
+        /* red underlay ? peeks out below the bar when active */
         .sc-bar-red {
           position: absolute;
           top: 0; left: 0;
@@ -421,7 +420,7 @@ export default function AboutMe() {
         }
         .sc-bar-outer.active .sc-bar-red { opacity: 1; }
 
-        /* white fill ¬ó skewed parallelogram on the right 25% */
+        /* white fill ? skewed parallelogram on the right 25% */
         .sc-bar-fill {
           position: absolute;
           inset: 0;
