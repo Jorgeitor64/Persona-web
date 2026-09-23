@@ -16,12 +16,12 @@ const MAIN_IMAGES = [mainm, mainm2, mainf];
 
 const REVEAL_CONTENT = [
   {
-    upper: ["SOBRE MÕ", ""],
-    lower: "Hola, soy Jorge MartÌn, tengo 17 aÒos y soy un programador novato",
+    upper: ["SOBRE M√ç", ""],
+    lower: "Hola, soy Jorge Mart√≠n, tengo 17 a√±os y soy un programador novato",
   },
   {
     upper: [
-      "Estudiante de IngenierÌa inform·tica",
+      "Estudiante de Ingenier√≠a inform√°tica",
       "",
     ],
     lower: "",
@@ -405,7 +405,7 @@ export default function AboutMe() {
         .sc-bar-outer:nth-child(2) { transition-delay: 80ms; }
         .sc-bar-outer:nth-child(3) { transition-delay: 160ms; }
 
-        /* red underlay ó peeks out below the bar when active */
+        /* red underlay ¬ó peeks out below the bar when active */
         .sc-bar-red {
           position: absolute;
           top: 0; left: 0;
@@ -421,7 +421,7 @@ export default function AboutMe() {
         }
         .sc-bar-outer.active .sc-bar-red { opacity: 1; }
 
-        /* white fill ó skewed parallelogram on the right 25% */
+        /* white fill ¬ó skewed parallelogram on the right 25% */
         .sc-bar-fill {
           position: absolute;
           inset: 0;
