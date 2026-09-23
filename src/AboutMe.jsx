@@ -16,24 +16,19 @@ const MAIN_IMAGES = [mainm, mainm2, mainf];
 
 const REVEAL_CONTENT = [
   {
-    upper: ["name moneybagg", "age:23"],
-    lower: "major: computer science",
+    upper: ["SOBRE M�", ""],
+    lower: "Hola, soy Jorge Mart�n, tengo 17 a�os y soy un programador novato",
   },
   {
     upper: [
-      "Cleopatra lived closer to the Moon landing than to the building of the pyramids.",
-      "Vikings kept cats on ships for pest control (and vibes).",
-      "In medieval Europe, animals could be put on trial for crimes",
+      "Estudiante de Ingenier�a inform�tica",
+      "",
     ],
-    lower: "abbove is some history fun fact",
+    lower: "",
   },
   {
-    upper: [
-      "Oxford University founding is older than the Aztec Empire.",
-      "The shortest war in history lasted 38–45 minutes (Britain vs Zanzibar).",
-      "Humans have been writing for ~5,000 years",
-    ],
-    lower: "yes it's a place holder",
+    upper: ["", ""],
+    lower: "",
   },
 ];
 
@@ -45,7 +40,7 @@ const ROLES = [
 
 const ITEMS = [
   {
-    id: "twitch", label: "ABOUT ME", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "🎮", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
+    id: "twitch", label: "ABOUT ME", handle: "@yourname", href: "https://twitch.tv/yourname", icon: "??", barIcon: icon1, bars: 1, newBars: [0], counts: ["56"],
     links: ["twitch.tv/videos/2041837265"],
     stats: [
       { tag: "FOL", value: "1.2K", color: "#9147ff" },
@@ -53,7 +48,7 @@ const ITEMS = [
     ],
   },
   {
-    id: "instagram", label: "FUN FACT ABOUT ME", handle: "@yourhandle", href: "https://instagram.com/yourhandle", icon: "📷", barIcon: icon2, bars: 5, newBars: [1, 2], counts: ["3.4M", "2.5M", "676K", "412K", "198K"],
+    id: "instagram", label: "FUN FACT ABOUT ME", handle: "@yourhandle", href: "https://instagram.com/yourhandle", icon: "??", barIcon: icon2, bars: 5, newBars: [1, 2], counts: ["3.4M", "2.5M", "676K", "412K", "198K"],
     links: ["instagram.com/p/C4xQmRrNk2a", "instagram.com/p/C3wLpBsOj7f", "instagram.com/reel/C2vKoArMi6e", "instagram.com/p/C1uJnZqLh5d", "instagram.com/reel/C0tImYpKg4c"],
     stats: [
       { tag: "FOL", value: "3.4K", color: "#e1306c" },
@@ -61,7 +56,7 @@ const ITEMS = [
     ],
   },
   {
-    id: "tiktok", label: "WIRED FACT ABOUT ME", handle: "@yourhandle", href: "https://tiktok.com/@yourhandle", icon: "🎵", barIcon: icon3, bars: 7, newBars: [0, 3, 5, 6], counts: ["5.1M", "3.7M", "2.2M", "1.4M", "831K", "490K", "217K"],
+    id: "tiktok", label: "WIRED FACT ABOUT ME", handle: "@yourhandle", href: "https://tiktok.com/@yourhandle", icon: "??", barIcon: icon3, bars: 7, newBars: [0, 3, 5, 6], counts: ["5.1M", "3.7M", "2.2M", "1.4M", "831K", "490K", "217K"],
     links: ["tiktok.com/@yourhandle/video/7318492016374859054", "tiktok.com/@yourhandle/video/7305837261940183342", "tiktok.com/@yourhandle/video/7291046385720348974", "tiktok.com/@yourhandle/video/7278392047163820334", "tiktok.com/@yourhandle/video/7264819203847165742", "tiktok.com/@yourhandle/video/7251047382916430126", "tiktok.com/@yourhandle/video/7237294018463851822"],
     stats: [
       { tag: "FOL", value: "8.9K", color: "#00f2ea" },
@@ -128,11 +123,11 @@ export default function AboutMe() {
       )}
       {revealed && (
         <div key={`nav-${active}`} className="sc-right-nav">
-          <span className="sc-nav-arrow left">◄</span>
+          <span className="sc-nav-arrow left">?</span>
           <span className="sc-nav-btn">LB</span>
           <span className="sc-nav-dot" />
           <span className="sc-nav-btn">RB</span>
-          <span className="sc-nav-arrow right">►</span>
+          <span className="sc-nav-arrow right">?</span>
         </div>
       )}
       {revealed && (
@@ -382,7 +377,7 @@ export default function AboutMe() {
           transform-origin: top right;
         }
 
-        /* ── Each bar ── */
+        /* ?? Each bar ?? */
         .sc-bar {
           position: relative;
           width: 45vw;
@@ -410,7 +405,7 @@ export default function AboutMe() {
         .sc-bar-outer:nth-child(2) { transition-delay: 80ms; }
         .sc-bar-outer:nth-child(3) { transition-delay: 160ms; }
 
-        /* red underlay — peeks out below the bar when active */
+        /* red underlay � peeks out below the bar when active */
         .sc-bar-red {
           position: absolute;
           top: 0; left: 0;
@@ -426,7 +421,7 @@ export default function AboutMe() {
         }
         .sc-bar-outer.active .sc-bar-red { opacity: 1; }
 
-        /* white fill — skewed parallelogram on the right 25% */
+        /* white fill � skewed parallelogram on the right 25% */
         .sc-bar-fill {
           position: absolute;
           inset: 0;
@@ -791,8 +786,8 @@ export default function AboutMe() {
       </div>
 
       <div className={`sc-footer${mounted ? " mounted" : ""}`}>
-        <div className="sc-footer-row"><span className="sc-footer-key">↑↓</span><span>SELECT</span></div>
-        <div className="sc-footer-row"><span className="sc-footer-key">↵</span><span>REVEAL</span></div>
+        <div className="sc-footer-row"><span className="sc-footer-key">??</span><span>SELECT</span></div>
+        <div className="sc-footer-row"><span className="sc-footer-key">?</span><span>REVEAL</span></div>
         <div className="sc-footer-row"><span className="sc-footer-key">ESC</span><span>BACK</span></div>
       </div>
 

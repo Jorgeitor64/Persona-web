@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 const ITEMS = [
-  { id: "about",   label: "SOBRE M√ç",           page: "about",   fontSize: 80, offsetX: 0,  offsetY: 0,  skew: -6,  skewY: 10  },
-  { id: "resume",  label: "CURR√çCULUM",         page: "resume",  fontSize: 66, offsetX: 20, offsetY: 8,  skew: -11, skewY: -10 },
+  { id: "about",   label: "SOBRE MÕ",           page: "about",   fontSize: 80, offsetX: 0,  offsetY: 0,  skew: -6,  skewY: 10  },
+  { id: "resume",  label: "CURRÕCULUM",         page: "resume",  fontSize: 66, offsetX: 20, offsetY: 8,  skew: -11, skewY: -10 },
   { id: "github",  label: "ENLACE GITHUB",      page: "github",  fontSize: 68, offsetX: 8, offsetY: 6,  skew: 0, skewY: -4  },
   { id: "socials", label: "REDES SOCIALES",     page: "socials", fontSize: 74, offsetX: 16, offsetY: 8,  skew: -3,  skewY: 5   },
   { id: "sideproj",label: "PROYECTOS",          page: "sideproj",fontSize: 56, offsetX: 10, offsetY: 6,  skew: -4,  skewY: 7   },
